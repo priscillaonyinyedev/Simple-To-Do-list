@@ -7,8 +7,10 @@
     <title>My To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- Header Section -->
     <header>
         <div>
             <h1>My To-Do List</h1>
@@ -23,7 +25,9 @@
             <h2>Add a New Task</h2>
 
             <div class="add-task">
+
                 <label for="task">Enter your task</label>
+
                 <br>
 
                 <input
@@ -35,6 +39,7 @@
                 <button type="button" id="addTaskBtn">
                     Add Task
                 </button>
+
             </div>
         </section>
 
@@ -42,53 +47,10 @@
         <section>
             <h2>Your Task List</h2>
 
+            <!-- Tasks will be added here using JavaScript -->
             <ul id="taskList">
-
-                <li>
-                    <div>
-                        <input type="checkbox" id="task1">
-                        <label for="task1">
-                            Complete my HTML assignment.
-                        </label>
-                    </div>
-
-                    <button type="button">Delete</button>
-                </li>
-
-                <li>
-                    <div>
-                        <input type="checkbox" id="task2">
-                        <label for="task2">
-                            Practise CSS.
-                        </label>
-                    </div>
-
-                    <button type="button">Delete</button>
-                </li>
-
-                <li>
-                    <div>
-                        <input type="checkbox" id="task3">
-                        <label for="task3">
-                            Study JavaScript.
-                        </label>
-                    </div>
-
-                    <button type="button">Delete</button>
-                </li>
-
-                <li>
-                    <div>
-                        <input type="checkbox" id="task4">
-                        <label for="task4">
-                            Read a book.
-                        </label>
-                    </div>
-
-                    <button type="button">Delete</button>
-                </li>
-
             </ul>
+
         </section>
 
         <!-- Task Summary Section -->
@@ -99,7 +61,7 @@
 
                 <p>
                     Total Tasks:
-                    <strong id="totalTasks">4</strong>
+                    <strong id="totalTasks">0</strong>
                 </p>
 
                 <p>
@@ -109,7 +71,7 @@
 
                 <p>
                     Pending Tasks:
-                    <strong id="pendingTasks">4</strong>
+                    <strong id="pendingTasks">0</strong>
                 </p>
 
             </div>
@@ -117,10 +79,12 @@
 
     </main>
 
+    <!-- Footer Section -->
     <footer>
         Made with love by Priscilla
     </footer>
 
+    <!-- JavaScript File -->
     <script src="script.js"></script>
 
 </body>
