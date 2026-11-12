@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>My To-Do List</h1>
+            <p>Organise your day and get things done!</p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Add New Task Section -->
+        <section>
+            <h2>Add a New Task</h2>
+
+            <div class="add-task">
+                <label for="task">Enter your task</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="task"
+                    placeholder="What do you need to do?"
+                >
+
+                <button type="button" id="addTaskBtn">
+                    Add Task
+                </button>
+            </div>
+        </section>
+
+        <!-- Task List Section -->
+        <section>
+            <h2>Your Task List</h2>
+
+            <ul id="taskList">
+
+                <li>
+                    <div>
+                        <input type="checkbox" id="task1">
+                        <label for="task1">
+                            Complete my HTML assignment.
+                        </label>
+                    </div>
+
+                    <button type="button">Delete</button>
+                </li>
+
+                <li>
+                    <div>
+                        <input type="checkbox" id="task2">
+                        <label for="task2">
+                            Practise CSS.
+                        </label>
+                    </div>
+
+                    <button type="button">Delete</button>
+                </li>
+
+                <li>
+                    <div>
+                        <input type="checkbox" id="task3">
+                        <label for="task3">
+                            Study JavaScript.
+                        </label>
+                    </div>
+
+                    <button type="button">Delete</button>
+                </li>
+
+                <li>
+                    <div>
+                        <input type="checkbox" id="task4">
+                        <label for="task4">
+                            Read a book.
+                        </label>
+                    </div>
+
+                    <button type="button">Delete</button>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- Task Summary Section -->
+        <section>
+            <h2>Task Summary</h2>
+
+            <div class="summary">
+
+                <p>
+                    Total Tasks:
+                    <strong id="totalTasks">4</strong>
+                </p>
+
+                <p>
+                    Completed Tasks:
+                    <strong id="completedTasks">0</strong>
+                </p>
+
+                <p>
+                    Pending Tasks:
+                    <strong id="pendingTasks">4</strong>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Made with love by Priscilla
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
